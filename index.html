@@ -10,13 +10,13 @@
     
     <link rel = "stylesheet" href = "charade.css">
     
-    <script src = "charade.js">
+    <script>
       var animal = ["pig", "dog", "bear", 'horse', 'lion', 'butterfly', 'bee', 'chicken', 'cat', 't-rex', 'bucking bronco', 'porcupine', 'peacock', 'walrus', 'monkey', 'snake', 'rabbit', 'kangaroo', 'squirrel', 'turtle', 'camel', 'cow', 'giraffe', 'penguin', 'alligator', 'frog', 'skunk', 'beaver', 'bull', 'deer', 'shark', 'crab', 'whale', 'elephant'];
       
       function randomAnimal() {
- 
-  var random = Math.floor(Math.random() * animal.length);
-  document.getElementById('id').innerHTML = animal[random];
+         var random = Math.floor(Math.random() * animal.length);
+         document.getElementById('id').innerHTML = animal[random];
+      }
     </script>
     
   </head>
