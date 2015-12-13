@@ -1,11 +1,50 @@
-var animal = ["pig", "dog", "bear", 'horse', 'lion', 'butterfly', 'bee', 'chicken', 'cat', 't-rex', 'bucking bronco', 'porcupine', 'peacock', 'walrus', 'monkey', 'snake', 'rabbit', 'kangaroo', 'squirrel', 'turtle', 'camel', 'cow', 'giraffe', 'penguin', 'alligator', 'frog', 'skunk', 'beaver', 'bull', 'deer', 'shark', 'crab', 'whale', 'elephant'];
+var animal = ["pig", "dog", "spider", "goat", "donkey", "dragon","bear", 'horse', 'lion', 'butterfly', 'bee', 'chicken', 'cat', 't-rex', 'bucking bronco', 'lizard', 'snail', 'porcupine', 'peacock', 'walrus', 'monkey', 'snake', 'rabbit', 'kangaroo', 'squirrel', 'turtle', 'camel', 'cow', 'giraffe', 'penguin', 'crocodile', 'frog', 'skunk', 'beaver', 'bull', 'deer', 'shark', 'crab', 'whale', 'elephant'];
 
-var person = ['police', 'firefighter', 'mailman', 'chef', 'doctor', 'teacher', 'gymnast', 'basketball player', 'boxer', 'baseball player', 'pilot', 'dentist', 'gardener', 'swimmer', 'rock climber', 'runner', 'fisherman', 'babysitter', 'truck driver', 'choir director', 'baby'];
+var person = ['police', 'firefighter', 'mailman', 'chef', 'doctor', 'teacher', 'gymnast', 'basketball player', 'boxer', 'baseball player', 'pilot', 'dentist', 'gardener', 'swimmer', 'rock climber', 'runner', 'fisherman', 'babysitter', 'truck driver', "choir director", 'baby'];
+
 var famousPeople = ['Will Ferrell', 'Mary Poppins', 'Charlie Chaplin', 'Vanna White', 'Richard Simmons', 'Big Bird', 'Paul Bunyan'];
 
-function randomAnimal() {
-  console.log("this works"); 
-  var random = Math.floor(Math.random() * animal.length);
-  document.getElementById('id').innerHTML = animal[random];
-  
+var phrases = ['Kill two birds with one stone.', "Keep your eyes peeled.",'Beating a dead horse.','Cut the Mustard',"Money doesn't grow on trees",'Birds of a feather, flock together.','Float like a butterfly, sting like a bee.','Winner winner, chicken dinner!',"Chick Flick","Happy as a Clam","Back-seat Driver",'Close, but no Cigar!',"Cold Turkey","Fly off the Handle","Hold your Horses!", 'Lame Duck','Smoke and Mirrors', 'Seven year Itch', 'Pipe dream',"Knock your socks off.", 'Son of a Gun', 'Hit the Sack','Make a long story short.',"Speak of the Devil.","Actions speak louder than words."];
+
+
+
+function randomCard(x, y) {
+    var random = Math.floor(Math.random() * x.length);
+    document.getElementById('y').innerHTML = x[random];
+  }
+
+function randomPerson() {
+  var random = Math.floor(Math.random() * person.length);
+  document.getElementById('psn').innerHTML = person[random];
+}
+
+
+function randomFamousPeople() {
+  var random = Math.floor(Math.random() * famousPeople.length);
+  document.getElementById('fp').innerHTML = famousPeople[random];
+}
+
+function randomPhrases() {
+  var random = Math.floor(Math.random() * phrases.length);
+  document.getElementById('ph').innerHTML = phrases[random];
+}
+
+function minusOneL(){
+ var count = 0;
+document.getElementById('changeL').innerHTML = count--;
+}
+
+function plusOneL(){
+ var count = 0;
+document.getElementById('changeL').innerHTML = count++;
+}
+
+function minusOneR(){
+ var count = 0;
+document.getElementById('changeR').innerHTML = count--;
+}
+
+function minusOneR(){
+ var count = 0;
+document.getElementById('changeR').innerHTML = count++;
 }
