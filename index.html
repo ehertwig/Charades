@@ -6,30 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
     <title>Charades</title>
     
-    <link rel = "stylesheet" href = "main.css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link rel = "stylesheet" href = "charade.css">
     
-    <script>
-      var animal = ["pig", "dog", "bear", 'horse', 'lion', 'butterfly', 'bee', 'chicken', 'cat', 't-rex', 'bucking bronco', 'porcupine', 'peacock', 'walrus', 'monkey', 'snake', 'rabbit', 'kangaroo', 'squirrel', 'turtle', 'camel', 'cow', 'giraffe', 'penguin', 'alligator', 'frog', 'skunk', 'beaver', 'bull', 'deer', 'shark', 'crab', 'whale', 'elephant'];
-      
-      function randomAnimal() {
-         var random = Math.floor(Math.random() * animal.length);
-         document.getElementById('id').innerHTML = animal[random];
-      }
-    </script>
+    <script src = "charade.js"></script>
     
-  </head>
-
   <body>
 
     <h1>Charades</h1>
-    <div class='button'>
-      <button id = 'id' onclick="randomAnimal()">Animals</button>
-    </div>
-
+      <p>Rules:  Split players into two equally balanced teams.  Younger players may pick from the Level 1 category.  Each actor will have 90 seconds to act out the image or word on the card.  If the team guesses correctly, advance the team score by one.  Each team alternates actors after each turn.  No noises, mouthing words, writing words in the air, or pointing at objects in the room.  Also, no clapping, slapping, hitting, kicking, or punching...Freddy.
+      
+      </p>
+      <h2>Level 1</h2>
+      <h2>Level 2</h2>
+        
+    <div class='button' class = "pulse">
+      <ul>
+       <li><button class='button' id = 'an' onclick="randomCard(animal,an)">Animals</button></li>
+       <li><button class='button' id = 'psn' onclick = "randomPerson()">People</button></li>
+       <li><button class='button' id = 'fp' onclick = "randomFamousPeople()">Famous People</button></li>
+       <li><button class='button' id = 'ph' onclick = "randomPhrases()">Phrases</button></li>
+     </ul>  
+   </div>
+   <h3>Team 1</h3> 
+   <h3>Team 2</h3>
+  <div class = "score">
+   <button class = "circle"  onclick = "minusOneL()">-</button>
+     <p id = "changeL">0</p>
+   <button class = "circle"  onclick = "plusOneL()">+</button>
+   
+   
+   <button class = "circle"  onclick = "minusOneR()">-</button>
+     <p id = "changeR">0</p>
+   <button class = "circle"  onclick = "plusOneR()">+</button>
+   
+   </div>
+    
+     
+    
   </body>
-
-  <footer>Thank you for playing!
-  </footer>
-</html>
+  <footer>Thanks for playing!</footer>
+    
+ 
