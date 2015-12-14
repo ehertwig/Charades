@@ -1,4 +1,4 @@
-var animal = ["pig", "dog", "spider", "goat", "donkey", "dragon","bear", 'horse', 'lion', 'butterfly', 'bee', 'chicken', 'cat', 't-rex', 'bucking bronco', 'lizard', 'snail', 'porcupine', 'peacock', 'walrus', 'monkey', 'snake', 'rabbit', 'kangaroo', 'squirrel', 'turtle', 'camel', 'cow', 'giraffe', 'penguin', 'crocodile', 'frog', 'skunk', 'beaver', 'bull', 'deer', 'shark', 'crab', 'whale', 'elephant'];
+var animal = ["pig", "dog","https://cloud.githubusercontent.com/assets/15449653/11772349/6cf7d420-a1e1-11e5-9253-1fdc73174b04.png" "spider", "goat", "donkey", "dragon","bear", 'horse', 'lion', 'butterfly', 'bee', 'chicken', 'cat', 't-rex', 'bucking bronco', 'lizard', 'snail', 'porcupine', 'peacock', 'walrus', 'monkey', 'snake', 'rabbit', 'kangaroo', 'squirrel', 'turtle', 'camel', 'cow', 'giraffe', 'penguin', 'crocodile', 'frog', 'skunk', 'beaver', 'bull', 'deer', 'shark', 'crab', 'whale', 'elephant'];
 
 var person = ['police', 'firefighter', 'mailman', 'chef', 'doctor', 'teacher', 'gymnast', 'basketball player', 'boxer', 'baseball player', 'pilot', 'dentist', 'gardener', 'swimmer', 'rock climber', 'runner', 'fisherman', 'babysitter', 'truck driver', "choir director", 'baby'];
 
@@ -8,9 +8,9 @@ var phrases = ['Kill two birds with one stone.', "Keep your eyes peeled.",'Beati
 
 
 
-function randomCard(x, y) {
-    var random = Math.floor(Math.random() * x.length);
-    document.getElementById('y').innerHTML = x[random];
+function randomAnimal() {
+    var random = Math.floor(Math.random() * animal.length);
+    document.getElementById('an').innerHTML = animal[random];
   }
 
 function randomPerson() {
