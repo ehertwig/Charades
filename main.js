@@ -36,7 +36,7 @@ document.getElementById('changeL').value = count--;
 
 function plusOneL(){
  var count = 0;
-document.getElementById('changeL').innerHTML = count++;
+document.getElementById('changeL').value = count++;
 }
 
 function minusOneR(){
