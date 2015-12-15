@@ -28,15 +28,15 @@ function randomPhrases() {
   var random = Math.floor(Math.random() * phrases.length);
   document.getElementById('ph').innerHTML = phrases[random];
 }
-
+var count = 0;
 function minusOneL(){
- var count = 0;
-document.getElementById('changeL').value = count--;
+ 
+document.getElementById("changeL").value = --count;
 }
 
 function plusOneL(){
- var count = 0;
-document.getElementById('changeL').value = count++;
+
+document.getElementById("changeL").value = ++count;
 }
 
 function minusOneR(){
