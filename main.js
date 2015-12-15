@@ -28,23 +28,24 @@ function randomPhrases() {
   var random = Math.floor(Math.random() * phrases.length);
   document.getElementById('ph').innerHTML = phrases[random];
 }
+
+
 var count = 0;
 function minusOneL(){
- 
-document.getElementById("changeL").value = --count;
+ document.getElementById("changeL").innerHTML = count--;
 }
 
 function plusOneL(){
-
-document.getElementById("changeL").value = ++count;
+document.getElementById("changeL").innerHTML = count++;
 }
 
-function minusOneR(){
- var count = 0;
-document.getElementById('changeR').innerHTML = count--;
-}
+
 
 function minusOneR(){
- var count = 0;
-document.getElementById('changeR').innerHTML = count++;
+document.getElementById("changeR").innerHTML = count--;
+}
+
+function plusOneR(){
+ 
+document.getElementById("changeR").innerHTML = count++;
 }
