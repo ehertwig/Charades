@@ -1,3 +1,29 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 body {
 background-color: #B0C4DE;
 }
@@ -22,10 +48,34 @@ h2{
 
 h3{
   font: 20px "Baskerville",sans-serif;
-  display: inline;
-  margin: 30px 80px 30px;
+  display: inline-block;
+  margin: auto;
   
 }
+
+#coin {
+  font: bold 18px "Baskerville", sans-serif;
+  color: #5C4033;
+  padding: 5px;
+  width: 80px;
+  height:80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
+  background: #CD7F32;
+  border: 5px dotted #aa7333;
+  text-align: center;
+  margin: auto;
+ 
+}
+#coin:hover{
+  background: #aa7333;
+  border: 5px dotted #CD7F32;
+ }
+ 
+
+
+ 
 
 .button{
   -webkit-border-radius: 15px;
@@ -105,7 +155,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef6bc', end
 }
 
 .score{
-  display:inline;
+  display:inline-block;
 }
 
 .circle{
@@ -135,9 +185,7 @@ footer {
  * Author: Ian Lunn @IanLunn
  * Author URL: http://ianlunn.co.uk/
  * Github: https://github.com/IanLunn/Hover
-
  * Made available under a MIT License:
  * http://www.opensource.org/licenses/mit-license.php
-
  * Hover.css Copyright Ian Lunn 2014.
  */
