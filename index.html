@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <title>Charades</title>
+    -<title>Charades</title>
     
     <link href="css/hover-min.css" rel="stylesheet">
     <link rel = "stylesheet" href = "main.css">
@@ -17,15 +17,13 @@
   <body>
 
     <h1>Charades</h1>
-      <p>Rules:  Split players into two balanced teams.  Younger players may pick from the Level 1 category.  Each actor will have 90 seconds to act out the image or word on the card.  If the team guesses correctly, advance the team score by one.  Each team alternates actors after each turn.  No noises, mouthing words, writing words in the air, or pointing at objects in the room.  Also, no clapping, slapping, hitting, kicking, or punching...Freddy.
+      <p><strong>Rules:</strong> Split players into two balanced teams.  Younger players may pick from the Level 1 category.  Have one of the teams call "Heads" or "Tails" to determine who goes first. Flip the coin!  Each actor will have 90 seconds to act out the image or word on the card.  If the team guesses correctly, advance the team score by one.  Each team alternates actors after each turn.  No noises, mouthing words, writing words in the air, or pointing at objects in the room.  Also, no clapping, slapping, hitting, kicking, or crying...Freddy.  Play on, Players!
       
       </p>
      <div>
      <button id = 'coin' onclick = 'flip()'>Coin Flip</button>
      
      </div>
-     
-     
       
       <h2>Level 1</h2>
       <h2>Level 2</h2>
@@ -38,21 +36,25 @@
        <li><button class='button' id = 'ph' onclick = "randomPhrases()">Phrases</button></li>
      </ul>  
    </div>
-   <h3>Team 1</h3> 
-   <h3>Team 2</h3>
-  <div class = "score">
+   
+  <h3>Team 1</h3> 
+  <h3>Team 2</h3>
+
+   <div class = "score">
+           
+     <button class = "circle"  onclick = "minusOneL()">-</button>
+       <span id = "changeL">0</span>
+     <button class = "circle"  onclick = "plusOneL()">+</button>
   
-   <button class = "circle"  onclick = "minusOneL()">-</button>
-     <p id = "changeL">0</p>
-   <button class = "circle"  onclick = "plusOneL()">+</button>
-   
-   
-   <button class = "circle"  onclick = "minusOneR()">-</button>
-     <p id = "changeR">0</p>
-   <button class = "circle"  onclick = "plusOneR()">+</button>
-   
-   </div>
-    
+    <div class = 'team2'>
+      <button class = "circle"  onclick = "minusOneR()">-</button>
+       <span id = "changeR">0</span>
+      <button class = "circle"  onclick = "plusOneR()">+</button>
+    </div> 
+     
+   </div>  
+ </body>
+  <footer>Thanks for playing!</footer>
      
     
   </body>
