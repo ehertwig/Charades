@@ -180,10 +180,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef6bc', end
   float:right;
 }
 
-#timer-beep {
-  position: absolute;
-  top: -100000em;
-}
+
 
 footer {
   margin-top: 400px;
