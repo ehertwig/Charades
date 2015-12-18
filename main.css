@@ -1,4 +1,4 @@
---/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -36,9 +36,11 @@ h1 {
 }
 
 p {
-  margin: 40px 200px 0 200px;
-  font: 17px 
+  margin: 40px 200px 0px 200px;
+  font: 17px;
   text-align: center;
+  line-height: 1.5;
+  
 }
 
 #coin {
@@ -53,7 +55,7 @@ p {
   background: radial-gradient(#CD7F32,#5C4033);
   border: 5px dotted #aa7333;
   text-align: center;
-  margin: 40px 0 40px 700px;
+  margin: 40px 0 40px 600px;
  
 }
 #coin:hover {
@@ -64,7 +66,7 @@ p {
 h2 {
   font-size: 35px; 
   display: inline;
-  margin: 40px 375px 0 300px;
+  margin: 40px 275px 0 250px;
   text-align: center;
  
 }
@@ -79,7 +81,7 @@ h2 {
   width:240px;
   height: 400px;
   display: inline;
-  margin: 40px 50px 80px 60px;
+  margin: 40px 30px 80px 30px;
 }
 
 .button:hover {
@@ -106,7 +108,7 @@ h2 {
 }
 
 ul li:nth-child(3){
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 #an {
@@ -146,16 +148,16 @@ ul li:nth-child(3){
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 30px;
   display: inline;
-  margin: 40px 270px 0px 300px;
+  margin: 40px 250px 0px 250px;
   
 }
 
  
 .score {
   display: inline-block;
-  margin: 40px 200px 0 320px;
+  margin: 40px 180px 0 220px;
 }
 
 .team2 {
