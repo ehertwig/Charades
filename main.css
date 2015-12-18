@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+-/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -25,21 +25,22 @@ time, mark, audio, video {
 }
 
 body {
-background-color: #B0C4DE;
+  background-color: #B0C4DE;
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
 }
 
 h1 {
-font: 60px "Baskerville", sans-serif;
-text-align: center;
+ font-size: 60px;
+ text-align: center;
 }
 
 p{
-  font: 17px "Baskerville",sans-serif;
+  font: 17px 
  
 }
 
 h2{
-  font: 35px "Baskerville", sans-serif;
+  font: 35px; 
   display: inline;
   margin-left: 50px;
   padding: 40px;
@@ -47,7 +48,7 @@ h2{
 }
 
 h3{
-  font: 20px "Baskerville",sans-serif;
+  font: 20px;
   display: inline-block;
   margin: auto;
   
@@ -62,14 +63,14 @@ h3{
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
   border-radius: 80px;
-  background: #CD7F32;
+  background: radial-gradient(#CD7F32,#5C4033);
   border: 5px dotted #aa7333;
   text-align: center;
   margin: auto;
  
 }
 #coin:hover{
-  background: #aa7333;
+  background: radial-gradient(#aa7333,#5C4033);
   border: 5px dotted #CD7F32;
  }
  
@@ -84,6 +85,7 @@ h3{
   box-shadow: 5px 5px 5px #838282;
   text-shadow: .5px .5px 1px;
   font: 26px "Trebuchet MS";
+  
 }
 
 .button:hover {
@@ -107,7 +109,7 @@ h3{
 .button li {
   list-style-type: none;
   float:left;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 #an {
@@ -154,9 +156,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef6bc', end
 
 }
 
-.score{
-  display:inline-block;
-}
+
 
 .circle{
   display: inline;
@@ -172,6 +172,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef6bc', end
   background-color: #F0F0F0;
 }
 
+.team1 {
+  float: left;
+}
+
+.team2 {
+  float:right;
+}
 
 footer {
   margin-top: 400px;
