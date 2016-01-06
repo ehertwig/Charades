@@ -166,9 +166,10 @@ h3 {
 }
 
 span {
-  font-size: 35px;
+  font-size: 45px;
   font-style: bold;
   text-shadow: 1px 1px 1px #708090;
+  margin: 0 15px;
 }
 
 .circle {
