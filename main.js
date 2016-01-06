@@ -55,7 +55,7 @@ document.getElementById("changeL").innerHTML = ++count;
 var count2 = 0;
 
 function minusOneR(){
-  if (count > 0) {
+  if (count2 > 0) {
 document.getElementById("changeR").innerHTML = --count2;
   }
 }
