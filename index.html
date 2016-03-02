@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="eng">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
-    <title>Charades</title>
-    
-    
-    <link rel = "stylesheet" href = "main.css">
-    
-    <script src = "main.js"></script>
-    
-  <body>
 
-    <h1>Charades</h1>
-      <p><strong>Rules:</strong> Split players into two balanced teams.  Younger players may pick from the Level 1 category.  Have one of the teams call "Heads" or "Tails" to determine who goes first. Flip the coin!  Each actor will have 90 seconds to act out the image or word on the card.  If the team guesses correctly, advance the team score by one.  Each team alternates actors after each turn.  No noises, mouthing words, writing words in the air, or pointing at objects in the room.  Also, no clapping, slapping, hitting, kicking, or crying...Freddy.  Play on, Players!
-      </p>
-     <div>
-     <button id = 'coin' onclick = 'flip()'>Coin Flip</button>
-     
-     </div>
-      
-      <h2>Level 1</h2>
-      <h2>Level 2</h2>
-        
-    <div class='button' class = "pulse">
-      <ul>
-       <li><button class='button' id = 'an' onclick="randomAnimal()">Animals</button></li>
-       <li><button class='button' id = 'psn' onclick = "randomPerson()">People</button></li>
-       <li><button class='button' id = 'fp' onclick = "randomFamousPeople()">Famous People</button></li>
-       <li><button class='button' id = 'ph' onclick = "randomPhrases()">Phrases</button></li>
-     </ul>  
-   </div>
-   
-  <h3>Team 1</h3> 
-  <h3>Team 2</h3>
+	<title>Charades</title>
 
-   <div class = "score">
-           
-     <button class = "circle"  onclick = "minusOneL()">-</button>
-       <span id = "changeL">0</span>
-     <button class = "circle"  onclick = "plusOneL()">+</button>
-  
-    <div class = 'team2'>
-      <button class = "circle"  onclick = "minusOneR()">-</button>
-       <span id = "changeR">0</span>
-      <button class = "circle"  onclick = "plusOneR()">+</button>
-    </div> 
-     
-   </div>  
- </body>
-  <footer>Thanks for playing!</footer>
-     
- 
- 
+
+	<link rel="stylesheet" href="main.css">
+
+	<script src="main.js"></script>
+
+	<body>
+
+		<h1>Charades</h1>
+		<p><strong>Rules:</strong> Split players into two balanced teams. Younger players may pick from the Level 1 category. Have one of the teams call "Heads" or "Tails" to determine who goes first. Flip the coin! Each actor will have 90 seconds to act out the image or word on the card. If the team guesses correctly, advance the team score by one. Each team alternates actors after each turn. No noises, mouthing words, writing words in the air, or pointing at objects in the room. Also, no clapping, slapping, hitting, kicking, or crying...Freddy. Play on, Players!</p>
+
+
+		<button id='coin' onclick='flip()'>Coin Flip</button>
+         
+        <div class="button pulse">
+			<ul class="cards">
+				<div class="col1">
+					<h2>Level 1</h2>
+					<li>
+						<button class='button' id='an' onclick="randomAnimal()"><img id="pic" src="images/animals.jpg" />Animals</button>
+					</li>
+					<li>
+						<button class='button' id='psn' onclick="randomPerson()">People</button>
+					</li>
+				</div>
+
+				<div class="col2">
+					<h2>Level 2</h2>
+					<li>
+						<button class='button' id='fp' onclick="randomFamousPeople()">Famous People</button>
+					</li>
+					<li>
+						<button class='button' id='ph' onclick="randomPhrases()">Phrases</button>
+					</li>
+				</div>
+			</ul>
+		</div>
+
+
+
+		<div class="container">
+			<div class="team1">
+				<h3>Team 1</h3>
+				<button class="circle" onclick="minusOneL()">-</button>
+				<span id="changeL">0</span>
+				<button class="circle" onclick="plusOneL()">+</button>
+			</div>
+			<div class='team2'>
+				<h3>Team 2</h3>
+				<button class="circle" onclick="minusOneR()">-</button>
+				<span id="changeR">0</span>
+				<button class="circle" onclick="plusOneR()">+</button>
+
+
+			</div>
+		</div>
+	</body>
+	<footer>Thanks for playing!</footer>
