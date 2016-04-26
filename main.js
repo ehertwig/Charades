@@ -51,6 +51,9 @@ function minusOneL() {
 
 function plusOneL() {
 	document.getElementById("changeL").innerHTML = ++count;
+    if (count === 10) {
+        	document.getElementById("changeL").innerHTML = "Team 1 wins!";
+    }
 }
 
 
@@ -63,6 +66,8 @@ function minusOneR() {
 }
 
 function plusOneR() {
-
 	document.getElementById("changeR").innerHTML = ++count2;
+    if (count2 === 10) {
+        	document.getElementById("changeR").innerHTML = "Team 2 wins!";
+    }
 }
