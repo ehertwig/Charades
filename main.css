@@ -56,7 +56,7 @@
 				}
 				
 				#coin {
-					font: bold 1.2em "Baskerville", sans-serif;
+					font: bold 1.2em "OpenSansRegular", Helvetica, Arial;
 					color: #5C4033;
 					padding: 5px;
 					width: 80px;
